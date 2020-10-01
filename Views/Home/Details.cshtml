@@ -1,0 +1,154 @@
+﻿@model IEnumerable<WebApplication3.Models.UserDetail>
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+
+<div class="container" style="margin-top: 20px;">
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+
+    <h3>User Details</h3>
+    <table border="1" class="table table-hover table-primary">
+
+        <tr>
+            <th scope="col">UserId</th>
+            @foreach (var v in Model)
+            {
+                <td>@v.UserId</td>
+            }
+        </tr>
+        <tr>
+
+            <th scope="col">FullName</th>
+            @foreach (var v in Model)
+            {
+                <td>@v.FullName</td>
+
+            }
+        </tr>
+        <tr>
+            <th scope="col">UserEmail</th>
+            @foreach (var v in Model)
+            {
+                <td>@v.UserEmail</td>
+            }
+        </tr>
+        <tr>
+
+            <th scope="col">CivilIdNumber</th>
+            @foreach (var v in Model)
+            {
+                <td>@v.CivilIdNumber</td>
+
+            }
+        </tr>
+        <tr>
+            <th scope="col">DOB</th>
+            @foreach (var v in Model)
+            {
+                <td>@v.DOB</td>
+            }
+        </tr>
+        <tr>
+
+            <th scope="col">Mobile</th>
+            @foreach (var v in Model)
+            {
+                <td>@v.MobileNo</td>
+
+            }
+        </tr>
+        <tr>
+            <th scope="col">Address</th>
+            @foreach (var v in Model)
+            {
+                <td>@v.Address</td>
+            }
+        </tr>
+        <tr>
+
+            <th scope="col">RoleId</th>
+            @foreach (var v in Model)
+            {
+                <td>@v.RoleId</td>
+
+            }
+        </tr>
+        <tr>
+            <th scope="col">CreatedDate</th>
+            @foreach (var v in Model)
+            {
+                <td>@v.CreatedDate</td>
+            }
+        </tr>
+        <tr>
+
+            <th scope="col">DeviceId</th>
+            @foreach (var v in Model)
+            {
+                <td>@v.DeviceId</td>
+
+            }
+        </tr>
+        <tr>
+            <th scope="col">DeviceType</th>
+            @foreach (var v in Model)
+            {
+                <td>@v.DeviceType</td>
+            }
+        </tr>
+        <tr>
+
+            <th scope="col">FcmToken</th>
+            @foreach (var v in Model)
+            {
+                <td>@v.FcmToken</td>
+
+            }
+        </tr>
+        <tr>
+            <th scope="col">Area</th>
+            @foreach (var v in Model)
+            {
+                <td>@v.Area</td>
+            }
+        </tr>
+        <tr>
+
+            <th scope="col">Block</th>
+            @foreach (var v in Model)
+            {
+                <td>@v.Block</td>
+
+            }
+        </tr>
+        <tr>
+            <th scope="col">Street</th>
+            @foreach (var v in Model)
+            {
+                <td>@v.Street</td>
+            }
+        </tr>
+        <tr>
+
+            <th scope="col">Floor</th>
+            @foreach (var v in Model)
+            {
+                <td>@v.Floor</td>
+
+            }
+        </tr>
+
+
+
+    </table>
+</div>
+<p>
+    @*@Html.ActionLink("Edit", "Edit", new { id = v.UserId }) |
+    @Html.ActionLink("Back to List", "Index")*@
+</p>
